@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikayemiz - Zemhery Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="story-page-body">
+
+    <!-- NAVBAR (Transparent over hero, then switches to light on scroll) -->
+    <nav class="navbar navbar-dark" id="story-navbar">
+        <div class="nav-brand"><a href="index.html" style="text-decoration:none; color:inherit;">ZEMHERY</a></div>
+        <div class="nav-menu">
+            <a href="menu.html" class="nav-item">MENÜ</a>
+            <a href="hikayemiz.html" class="nav-item active-nav">HAKKIMIZDA</a>
+            <a href="#iletisim" class="nav-item">İLETİŞİM</a>
+            <a href="menu.html#ozel-siparisler" class="nav-item">SİPARİŞ VER</a>
+        </div>
+    </nav>
+
+    <!-- STORY HERO -->
+    <header class="story-hero">
+        <div class="story-hero-bg">
+            <img src="/zemhery7.jpg" alt="Zemhery Story" id="story-hero-img">
+            <div class="story-hero-overlay"></div>
+        </div>
+        <div class="story-hero-content">
+            <h1 class="story-title-giant">GEÇMİŞTEN GELECEĞE</h1>
+            <p class="story-subtitle">Zaman, en önemli malzememizdir.</p>
+        </div>
+    </header>
+
+    <main class="story-main">
+        <!-- PART 1: ZEMHERY'NİN HİKAYESİ -->
+        <section class="story-split-section" id="zemhery-hikayesi">
+            <div class="story-split-text story-gsap-fade">
+                <h2>ZEMHERY'NİN DOĞUŞU</h2>
+                <div class="gold-line"></div>
+                <p>Her büyük lezzet, küçük bir tutku tohumuyla başlar. Zemhery Bakery, yıllar önce sadece su, un, tuz ve <strong>zamanın</strong> gücüne inanan mütevazı bir fırın olarak yola çıktı. O zamanlardan beri değişmeyen tek kuralımız var: Hiçbir şeye acele etmemek.</p>
+                <p>Bizim için ekmek sadece bir gıda değil, her sabah yeniden yazılan, mayası yıllara dayanan yaşayan bir şaheserdir. Ateşin başında geçen uzun geceler, sabırla yoğrulan organik hamurlar ve sabahın ilk ışıklarıyla fırından yayılan o tarif edilemez koku... İşte Zemhery felsefesi tam olarak budur.</p>
+            </div>
+            <div class="story-split-image">
+                <div class="img-mask">
+                    <img src="/zemhery3.jpg" class="parallax-img" alt="Zemhery History">
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 2: MUTFAK & USTALARIMIZ (Inverted Split) -->
+        <section class="story-split-section inverted" id="mutfak">
+            <div class="story-split-image">
+                <div class="img-mask">
+                    <img src="/zemhery4.jpg" class="parallax-img" alt="Master Bakers">
+                </div>
+            </div>
+            <div class="story-split-text story-gsap-fade">
+                <h2>USTALARIMIZ & MUTFAĞIMIZ</h2>
+                <div class="gold-line"></div>
+                <p>Zemhery'nin mutfağına adım attığınızda, modern dünyanın telaşını kapının dışında bırakırsınız. Burada makinelerden çok, işini aşkla yapan zanaatkar ustalarımızın elleri konuşur.</p>
+                <p>Her hamur bezesi tek tek elde yuvarlanır, her kruvasan katmanı milimetrik özenle açılır. Uykunun en tatlı olduğu o sessiz gece vakitlerinde, mutfağımız hararetli bir sanat atölyesine dönüşür. Sadece en yöresel malzemeler, geleneksel teknikler ve usta parmakların birleştiği kalfalıkta, hiçbir lezzet "tesadüf" değildir. Her lokmada hissettiğiniz o kusursuz doku, ustalarımızın terden ve sabırdan yoğrulan efsanevi adanmışlığının bir sonucudur.</p>
+            </div>
+        </section>
+
+        <!-- QUOTE PARALLAX BANNER -->
+        <section class="story-quote-banner">
+            <div class="story-quote-bg" style="background-image: url('https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1500&auto=format&fit=crop');"></div>
+            <div class="story-quote-content">
+                <h2>"İyi bir ekşi maya, fırıncının sabrının şarkısıdır."</h2>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <h2 class="cursive-text">Her Gün Açık 07:00-19:00</h2>
+            <h2 class="cursive-text">Hoş Geldiniz</h2>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zemhery Bakery. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Local Script for Story interactions -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Image slight zoom on scroll
+        gsap.to('#story-hero-img', {
+            yPercent: 20,
+            scale: 1.1,
+            ease: "none",
+            scrollTrigger: {
+                trigger: '.story-hero',
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        // Parallax images in splits
+        gsap.utils.toArray('.parallax-img').forEach(img => {
+            gsap.fromTo(img, 
+                { yPercent: -15, scale: 1.15 },
+                { 
+                    yPercent: 15, 
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: img.parentElement.parentElement,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: 1
+                    }
+                }
+            );
+        });
+
+        // Fade Up Texts
+        gsap.utils.toArray('.story-gsap-fade').forEach(text => {
+            gsap.from(text.children, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: text,
+                    start: "top 80%"
+                }
+            });
+        });
+        
+        // Navbar scroll color handling
+        const navbar = document.getElementById('story-navbar');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 80) {
+                navbar.classList.remove('navbar-dark');
+                navbar.style.background = 'rgba(248, 245, 242, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.classList.add('navbar-dark');
+                navbar.style.background = 'transparent';
+                navbar.style.backdropFilter = 'none';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

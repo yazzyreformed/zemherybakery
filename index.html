@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zemhery Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">ZEMHERY</div>
+        <div class="nav-menu">
+            <a href="menu.html" class="nav-item">MENÜ</a>
+            <a href="hikayemiz.html" class="nav-item">HAKKIMIZDA</a>
+            <a href="#iletisim" class="nav-item">İLETİŞİM</a>
+            <a href="menu.html#ozel-siparisler" class="nav-item">SİPARİŞ VER</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero-wrapper">
+        <div class="hero-img-container">
+            <img src="/hero.jpg" alt="Zemhery Bread" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-text-scroll">
+            <div class="scroll-text-container">
+                <p class="scroll-line">GELENEK</p>
+                <p class="scroll-line">ZANAAT</p>
+                <p class="scroll-line">EKŞİ MAYA</p>
+                <p class="scroll-line">TUTKU</p>
+                <p class="scroll-line">OTANTİK</p>
+                <p class="scroll-line">FIRIN</p>
+                <p class="scroll-line">KALİTE</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERLAPPING RECTANGLES (Sticky Stacking) -->
+    <div class="rect-stack-container">
+        <!-- Rect 1 -->
+        <div class="rect-slide rect-1">
+            <div class="rect-content">
+                <div class="rect-text">
+                    <h2>FIRINDAN TAZE</h2>
+                    <p>Fırıncılarımız her sabah sadece un, su, tuz ve zaman kullanarak mükemmelliği yaratıyor. Gerçek ekşi mayanın tadını keşfedin.</p>
+                    <a href="menu.html" class="sexy-btn"><span>MENÜMÜZE ULAŞIN</span><div class="btn-arrow">&rarr;</div></a>
+                </div>
+                <div class="rect-img" style="background-image: url('/zemhery9.jpg');"></div>
+            </div>
+        </div>
+        <!-- Rect 2 -->
+        <div class="rect-slide rect-2">
+            <div class="rect-content">
+                <div class="rect-img" style="background-image: url('/zemherypasta.jpg');"></div>
+                <div class="rect-text">
+                    <h2>SİZE ÖZEL PASTA TASARIMLARI</h2>
+                    <p>Her pasta, bir hikâyeyi anlatır. Usta ekibimiz; doğum günleriniz, düğünleriniz ve hayatınızın en özel anları için sizinle birlikte tasarlıyor. Formdan fırına, her detay yalnızca size özel.</p>
+                    <a href="menu.html#ozel-siparisler" class="sexy-btn"><span>SİPARİŞ VERİN</span><div class="btn-arrow">&rarr;</div></a>
+                </div>
+            </div>
+        </div>
+        <!-- 4 MALZEME -->
+        <div class="ingredients-section">
+            <div class="ing-label">BİZİM GİZLİ TARİFİMİZ.</div>
+            <div class="ing-grid">
+
+                <div class="ing-item">
+                    <span class="ing-num">01</span>
+                    <h2 class="ing-name">UN</h2>
+                    <div class="ing-line"></div>
+                    <p class="ing-sub">Organik Buğday</p>
+                    <p class="ing-desc">Yerel çiftçilerden temin edilen, taş değirmende öğütülmüş tam buğday unu. Kimyasal katkı yok, sadece saf un.</p>
+                </div>
+
+                <div class="ing-item">
+                    <span class="ing-num">02</span>
+                    <h2 class="ing-name">SU</h2>
+                    <div class="ing-line"></div>
+                    <p class="ing-sub">Saf Kaynak</p>
+                    <p class="ing-desc">Mineral dengesi korunmuş, filtrelenmiş su. Hamurun karakterini ve dokusunu doğrudan belirler.</p>
+                </div>
+
+                <div class="ing-item">
+                    <span class="ing-num">03</span>
+                    <h2 class="ing-name">TUZ</h2>
+                    <div class="ing-line"></div>
+                    <p class="ing-sub">Himalaya Kaya Tuzu</p>
+                    <p class="ing-desc">Katkısız, doğal mineralli kaya tuzu. Her lokmada hissedilen o derin tadın tek sırrı.</p>
+                </div>
+
+                <div class="ing-item">
+                    <span class="ing-num">04</span>
+                    <h2 class="ing-name">ZAMAN</h2>
+                    <div class="ing-line"></div>
+                    <p class="ing-sub">48 Saat Fermantasyon</p>
+                    <p class="ing-desc">Ekşi mayanın olgunlaşması için asla acele etmiyoruz. Sabır, tarife yazmadığımız en önemli malzememizdir.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TILTED IMAGE GRID -->
+    <div class="tilted-grid-section">
+        <div class="tilted-grid">
+            <img class="tilted-img t0" src="/zemherysol.jpg" alt="P0">
+            <img class="tilted-img t1" src="/zemhery10.jpg" alt="P1">
+            <img class="tilted-img t2" src="/zemhery5.jpg" alt="P2">
+            <img class="tilted-img t3" src="/zemhery11.jpg" alt="P3">
+            <img class="tilted-img t4" src="/zemhery2.jpg" alt="P4">
+            <img class="tilted-img t5" src="/zemherysag.jpg" alt="P5">
+        </div>
+    </div>
+
+    <!-- VIDEO REVEAL WRAPPER (Curtain + Sticky Video) -->
+    <div class="video-reveal-wrapper">
+        <!-- STICKY VIDEO LAYER -->
+        <div class="vr-sticky-video">
+            <video id="bread-video" src="/zemheryvideo.mp4" muted loop playsinline></video>
+            <button id="play-pause-btn" class="play-btn">SESİ AÇ</button>
+        </div>
+
+        <!-- SCROLLING CURTAIN LAYER -->
+        <div class="vr-scroll-content">
+            <!-- CURTAIN WITH TRANSPARENT SVG HOLE -->
+            <div class="vr-svg-curtain">
+                <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <mask id="text-hole-mask">
+                            <rect width="100%" height="100%" fill="white" />
+                            <!-- Creates a slightly tinted circular background -->
+                            <circle cx="50%" cy="50%" r="240" fill="rgba(255,255,255,0.9)" />
+                            <!-- Text punches perfectly transparent holes -->
+                            <text x="50%" y="45%" fill="black" font-size="6rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">HAMURUN</text>
+                            <text x="50%" y="55%" fill="black" font-size="6rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">BÜYÜSÜ</text>
+                        </mask>
+                    </defs>
+                    <rect width="100%" height="100%" fill="#F5EAD7" mask="url(#text-hole-mask)" />
+                </svg>
+            </div>
+
+            <!-- TRANSPARENT VIEW TO SHOW FULL VIDEO -->
+            <div class="vr-transparent-gap"></div>
+        </div>
+    </div>
+
+    <!-- NEXT PAGE OVERLAY -->
+    <div class="next-page-overlay">
+        <img src="/zemhery1.jpg" class="bg-img" alt="Kitchen">
+        <a href="hikayemiz.html#mutfak" style="text-decoration: none; color: inherit;">
+            <div class="step-card">
+                <h3>Mutfağımıza Adım Atın</h3>
+                <p>Makaleyi Oku &rarr;</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- MİSAFİR YORUMLARI -->
+    <section class="reviews-section">
+
+        <!-- Başlık -->
+        <div class="reviews-header">
+            <h2 class="reviews-title">Misafirlerimizin <span class="reviews-title-cursive">Deneyimleri</span></h2>
+            <div class="reviews-meta">
+                <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                <span class="reviews-meta-label">Google Yorumları</span>
+                <span class="reviews-meta-stars">★★★★★</span>
+                <span class="reviews-meta-score">4.5</span>
+            </div>
+        </div>
+
+        <!-- Satır 1 — sola kayar -->
+        <div class="reviews-row-wrap">
+            <div class="reviews-track reviews-track--left">
+                <!-- 6 kart -->
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#00897B;">ZK</div><div class="rv-info"><p class="rv-name">Zeynep Kul</p><p class="rv-date">2 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#7B1FA2;">FF</div><div class="rv-info"><p class="rv-name">Fidan Fırat</p><p class="rv-date">4 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#1565C0;">BÇ</div><div class="rv-info"><p class="rv-name">Büşra Çevik</p><p class="rv-date">7 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#2E7D32;">SK</div><div class="rv-info"><p class="rv-name">Soner Karaca</p><p class="rv-date">6 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#E65100;">SR</div><div class="rv-info"><p class="rv-name">StreaMRoLLeR</p><p class="rv-date">2 yıl önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#C62828;">OY</div><div class="rv-info"><p class="rv-name">Orhan Yılmaz</p><p class="rv-date">1 yıl önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️</p></div>
+                <!-- Kopya (seamless loop) -->
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#00897B;">ZK</div><div class="rv-info"><p class="rv-name">Zeynep Kul</p><p class="rv-date">2 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#7B1FA2;">FF</div><div class="rv-info"><p class="rv-name">Fidan Fırat</p><p class="rv-date">4 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#1565C0;">BÇ</div><div class="rv-info"><p class="rv-name">Büşra Çevik</p><p class="rv-date">7 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#2E7D32;">SK</div><div class="rv-info"><p class="rv-name">Soner Karaca</p><p class="rv-date">6 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#E65100;">SR</div><div class="rv-info"><p class="rv-name">StreaMRoLLeR</p><p class="rv-date">2 yıl önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#C62828;">OY</div><div class="rv-info"><p class="rv-name">Orhan Yılmaz</p><p class="rv-date">1 yıl önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️</p></div>
+            </div>
+        </div>
+
+        <!-- Satır 2 — sağa kayar -->
+        <div class="reviews-row-wrap">
+            <div class="reviews-track reviews-track--right">
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#C62828;">OY</div><div class="rv-info"><p class="rv-name">Orhan Yılmaz</p><p class="rv-date">1 yıl önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#E65100;">SR</div><div class="rv-info"><p class="rv-name">StreaMRoLLeR</p><p class="rv-date">2 yıl önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#2E7D32;">SK</div><div class="rv-info"><p class="rv-name">Soner Karaca</p><p class="rv-date">6 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#1565C0;">BÇ</div><div class="rv-info"><p class="rv-name">Büşra Çevik</p><p class="rv-date">7 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#7B1FA2;">FF</div><div class="rv-info"><p class="rv-name">Fidan Fırat</p><p class="rv-date">4 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#00897B;">ZK</div><div class="rv-info"><p class="rv-name">Zeynep Kul</p><p class="rv-date">2 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!</p></div>
+                <!-- Kopya (seamless loop) -->
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#C62828;">OY</div><div class="rv-info"><p class="rv-name">Orhan Yılmaz</p><p class="rv-date">1 yıl önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#E65100;">SR</div><div class="rv-info"><p class="rv-name">StreaMRoLLeR</p><p class="rv-date">2 yıl önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#2E7D32;">SK</div><div class="rv-info"><p class="rv-name">Soner Karaca</p><p class="rv-date">6 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#1565C0;">BÇ</div><div class="rv-info"><p class="rv-name">Büşra Çevik</p><p class="rv-date">7 ay önce</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#7B1FA2;">FF</div><div class="rv-info"><p class="rv-name">Fidan Fırat</p><p class="rv-date">4 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!</p></div>
+                <div class="rv-card"><div class="rv-top"><div class="rv-avatar" style="background:#00897B;">ZK</div><div class="rv-info"><p class="rv-name">Zeynep Kul</p><p class="rv-date">2 ay önce · Yerel Rehber</p></div><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="rv-stars">★★★★★</div><p class="rv-text">Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!</p></div>
+            </div>
+        </div>
+
+        <!-- Kenar soluklaştırma -->
+        <div class="reviews-fade-left"></div>
+        <div class="reviews-fade-right"></div>
+
+        <!-- CTA -->
+        <div class="reviews-cta">
+            <h3 class="reviews-cta-title">BİZİ DEĞERLENDİRİN</h3>
+            <a href="https://www.google.com/maps/search/Zemhery+Bakery" target="_blank" class="reviews-cta-btn">GOOGLE'DA YORUM YAZ</a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <!-- Üç kolon -->
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4 class="footer-col-title">Keşfedin</h4>
+                <a href="menu.html" class="footer-link">Menü</a>
+                <a href="hikayemiz.html" class="footer-link">Hikayemiz</a>
+                <a href="hikayemiz.html#mutfak" class="footer-link">Mutfağımız</a>
+            </div>
+
+            <div class="footer-col footer-col-center">
+                <h4 class="footer-col-title">Bizi Bulun</h4>
+                <p class="footer-address">Alacaatlı Mah. Şht. Eren Bülbül Cad.<br>No:42/B, Çankaya / Ankara</p>
+                <a href="https://maps.google.com/maps?q=Alacaatl%C4%B1%2C+%C5%9Eht.+Eren+B%C3%BClb%C3%BCl+Cad.+No%3A42%2FB%2C+06530+%C3%87ankaya%2FAnkara" target="_blank" class="footer-map-btn">Yol Tarifi Al &rarr;</a>
+            </div>
+
+            <div class="footer-col footer-col-right">
+                <h4 class="footer-col-title">Çalışma Saatleri</h4>
+                <p class="footer-days">Pazartesi — Pazar</p>
+                <p class="footer-hours">07:00 — 19:00</p>
+                <p class="footer-daily">Her gün, taze.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p class="footer-copy">&copy; 2026 Zemhery Bakery &mdash; Tüm Hakları Saklıdır.</p>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-link">Instagram</a>
+                <a href="https://www.google.com/maps/search/Zemhery+Bakery" target="_blank" class="footer-social-link">Google</a>
+                <a href="https://www.yemeksepeti.com/restaurant/ctfj/zemhery-bakery" target="_blank" class="footer-social-link">Yemeksepeti</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
