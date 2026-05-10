@@ -7,7 +7,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
-    background-color: #F5EAD7; /* Off-white warm bakery tone */
+    background-color: #F5EAD7;
     overflow-x: hidden;
 }
 
@@ -346,7 +346,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 0; /* Lowest layer behind history section and hero */
+    z-index: 0;
     overflow: hidden;
     background: #000;
 }
@@ -359,16 +359,62 @@ body {
     position: relative;
     z-index: 5;
 }
+
+/* CARD STAGE CURTAIN */
+.card-stage-curtain {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.card-stage-curtain .vr-svg-curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.card-stage-cards {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+.stage-card {
+    position: absolute;
+    width: 210px;
+    height: 270px;
+    background: #fff;
+    padding: 10px 10px 38px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    opacity: 0;
+}
+.stage-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Final resting positions — scattered like thrown on a table */
+.sc0 { top: 14%; left: 5%; }
+.sc1 { top: 5%;  left: 30%; }
+.sc2 { top: 3%; left: 57%; }
+.sc3 { top: 40%; left: 73%; }
+.sc4 { top: 57%; left: 8%; }
+.sc5 { top: 68%; left: 50%; }
+
 .vr-svg-curtain {
     width: 100%;
     height: 100vh;
     position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Curtain drop shadow */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 .vr-transparent-gap {
     width: 100%;
     height: 100vh;
-    pointer-events: none; /* Allows clicks to reach the video/mute button */
+    pointer-events: none;
 }
 
 /* PLAY / UNMUTE BUTTON */

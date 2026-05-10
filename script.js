@@ -121,18 +121,51 @@ if (document.querySelector('.ingredients-section')) {
     });
 }
 
-// 4. Tilted Images parallax
-gsap.utils.toArray('.tilted-img').forEach((img, i) => {
-    gsap.to(img, {
-        y: -30 * (i % 2 === 0 ? 1 : -1),
+// 4. Card Stage — 6 photos fly in over HAMURUN BÜYÜSÜ curtain
+const cardStageCurtain = document.querySelector('.card-stage-curtain');
+const stageCards = document.querySelectorAll('.stage-card');
+
+if (cardStageCurtain && stageCards.length) {
+    const W = window.innerWidth;
+    const H = window.innerHeight;
+
+    // Starting positions: each card flies in from a different direction
+    const fromVars = [
+        { x: -W * 1.5, y: -H * 0.5, rotation: -55, opacity: 0 },  // sc0: left-top
+        { x: W * 0.1,  y: -H * 1.5, rotation:  35, opacity: 0 },  // sc1: top
+        { x:  W * 1.5, y: -H * 0.8, rotation:  28, opacity: 0 },  // sc2: right-top
+        { x:  W * 1.8, y:  H * 0.3, rotation: -30, opacity: 0 },  // sc3: right
+        { x: -W * 1.3, y:  H * 0.9, rotation:  22, opacity: 0 },  // sc4: left-bottom
+        { x:  W * 0.4, y:  H * 1.6, rotation: -42, opacity: 0 },  // sc5: bottom
+    ];
+    // Final resting rotations — slightly tilted, like thrown on a table
+    const toRotations = [-7, 5, -4, 8, 4, -6];
+
+    // Set initial off-screen state immediately
+    stageCards.forEach((card, i) => gsap.set(card, fromVars[i]));
+
+    const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: '.tilted-grid-section',
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1
+            trigger: cardStageCurtain,
+            start: 'top top',
+            end: '+=1400',
+            pin: true,
+            scrub: 1.5,
+            anticipatePin: 1,
         }
     });
-});
+
+    // Cards fly in one by one, staggered
+    stageCards.forEach((card, i) => {
+        tl.to(card, {
+            x: 0, y: 0,
+            rotation: toRotations[i],
+            opacity: 1,
+            ease: 'power3.out',
+            duration: 0.7
+        }, i * 0.2);
+    });
+}
 
 // 5. Video Reveal Parallax & Playback
 const vrWrapper = document.querySelector('.video-reveal-wrapper');

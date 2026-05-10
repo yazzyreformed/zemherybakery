@@ -110,19 +110,7 @@
         </div>
     </div>
 
-    <!-- TILTED IMAGE GRID -->
-    <div class="tilted-grid-section">
-        <div class="tilted-grid">
-            <img class="tilted-img t0" src="/zemherysol.jpg" alt="P0">
-            <img class="tilted-img t1" src="/zemhery10.jpg" alt="P1">
-            <img class="tilted-img t2" src="/zemhery5.jpg" alt="P2">
-            <img class="tilted-img t3" src="/zemhery11.jpg" alt="P3">
-            <img class="tilted-img t4" src="/zemhery2.jpg" alt="P4">
-            <img class="tilted-img t5" src="/zemherysag.jpg" alt="P5">
-        </div>
-    </div>
-
-    <!-- VIDEO REVEAL WRAPPER (Curtain + Sticky Video) -->
+    <!-- CARD STAGE + VIDEO REVEAL (Combined) -->
     <div class="video-reveal-wrapper">
         <!-- STICKY VIDEO LAYER -->
         <div class="vr-sticky-video">
@@ -132,21 +120,30 @@
 
         <!-- SCROLLING CURTAIN LAYER -->
         <div class="vr-scroll-content">
-            <!-- CURTAIN WITH TRANSPARENT SVG HOLE -->
-            <div class="vr-svg-curtain">
-                <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                        <mask id="text-hole-mask">
-                            <rect width="100%" height="100%" fill="white" />
-                            <!-- Creates a slightly tinted circular background -->
-                            <circle cx="50%" cy="50%" r="240" fill="rgba(255,255,255,0.9)" />
-                            <!-- Text punches perfectly transparent holes -->
-                            <text x="50%" y="45%" fill="black" font-size="6rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">HAMURUN</text>
-                            <text x="50%" y="55%" fill="black" font-size="6rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">BÜYÜSÜ</text>
-                        </mask>
-                    </defs>
-                    <rect width="100%" height="100%" fill="#F5EAD7" mask="url(#text-hole-mask)" />
-                </svg>
+            <!-- PINNED STAGE: HAMURUN BÜYÜSÜ curtain + flying cards -->
+            <div class="card-stage-curtain">
+                <!-- SVG curtain with text hole revealing video -->
+                <div class="vr-svg-curtain">
+                    <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <mask id="text-hole-mask">
+                                <rect width="100%" height="100%" fill="white" />
+                                <text x="50%" y="43%" fill="black" font-size="9rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">HAMURUN</text>
+                                <text x="50%" y="59%" fill="black" font-size="9rem" font-family="'Anton', sans-serif" text-anchor="middle" dominant-baseline="middle">BÜYÜSÜ</text>
+                            </mask>
+                        </defs>
+                        <rect width="100%" height="100%" fill="#F5EAD7" mask="url(#text-hole-mask)" />
+                    </svg>
+                </div>
+                <!-- Photo cards that fly in on scroll -->
+                <div class="card-stage-cards">
+                    <div class="stage-card sc0"><img src="/zemherysol.jpg" alt="Zemhery"></div>
+                    <div class="stage-card sc1"><img src="/zemhery10.jpg" alt="Zemhery"></div>
+                    <div class="stage-card sc2"><img src="/zemhery5.jpg" alt="Zemhery"></div>
+                    <div class="stage-card sc3"><img src="/zemhery11.jpg" alt="Zemhery"></div>
+                    <div class="stage-card sc4"><img src="/zemhery2.jpg" alt="Zemhery"></div>
+                    <div class="stage-card sc5"><img src="/zemherysag.jpg" alt="Zemhery"></div>
+                </div>
             </div>
 
             <!-- TRANSPARENT VIEW TO SHOW FULL VIDEO -->
